@@ -101,7 +101,7 @@ services:
           memory: 200M
 
   core-api:
-    image: ryanpower/core-api-docker:v0.3.2
+    image: ryanpower/core-api-demo:v0.3.2
     container_name: core-api
     restart: always
     ports:

@@ -54,15 +54,15 @@ func (l *LoginLogic) Login(req *types.LoginReq) (resp *types.LoginResp, err erro
 
 		// add token into database
 		expiredAt := time.Now().Add(time.Second * 259200).Unix()
-		_, err = l.svcCtx.CoreRpc.CreateToken(l.ctx, &core.TokenInfo{
-			Id:        "",
-			CreatedAt: 0,
-			Uuid:      user.Id,
-			Token:     token,
-			Source:    "core_user",
-			Status:    1,
-			ExpiredAt: expiredAt,
-		})
+		//_, err = l.svcCtx.CoreRpc.CreateToken(l.ctx, &core.TokenInfo{
+		//	Id:        "",
+		//	CreatedAt: 0,
+		//	Uuid:      user.Id,
+		//	Token:     token,
+		//	Source:    "core_user",
+		//	Status:    1,
+		//	ExpiredAt: expiredAt,
+		//})
 
 		if err != nil {
 			return nil, err
