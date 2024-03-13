@@ -13,7 +13,7 @@ require (
 	github.com/zeromicro/go-zero v1.5.2
 	golang.org/x/oauth2 v0.6.0
 	google.golang.org/grpc v1.55.0
-	google.golang.org/protobuf v1.30.0
+	google.golang.org/protobuf v1.33.0
 )
 
 replace github.com/zeromicro/go-zero v1.5.2 => github.com/suyuan32/simple-admin-tools v1.5.7
